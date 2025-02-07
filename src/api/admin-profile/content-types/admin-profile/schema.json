@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "admin_profiles",
+  "info": {
+    "singularName": "admin-profile",
+    "pluralName": "admin-profiles",
+    "displayName": "admin-profile"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "adminUser": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    }
+  }
+}
